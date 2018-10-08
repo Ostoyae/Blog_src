@@ -79,4 +79,10 @@ code 002.a
 $ ls
 _header  _libs  main.c  README.md  _src
 $ gcc main.c -I./header -L./libs -lmimic -o quote
+$ ./quote 
+"At the end of the day, my goal was to be the best hacker"
+	- Kevin Mitnick
+$
 ```
+
+
