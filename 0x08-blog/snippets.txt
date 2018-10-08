@@ -76,5 +76,7 @@ int main(void)
 code 002.a
 
 ```
+$ ls
+_header  _libs  main.c  README.md  _src
 $ gcc main.c -I./header -L./libs -lmimic -o quote
 ```
