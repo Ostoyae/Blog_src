@@ -85,4 +85,6 @@ $ ./quote
 $
 ```
 
+code 002.b
 
+$ gcc ... -Iinclude_path ...
