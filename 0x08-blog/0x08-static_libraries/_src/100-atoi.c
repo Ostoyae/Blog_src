@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "mimic.h"
 
 /**
  * _atoi - the firt whole int number in a string.

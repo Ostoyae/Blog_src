@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "mimic.h"
 /**
  * _puts - minic the stdio version of puts
  * @str: the value to process to the stdout.

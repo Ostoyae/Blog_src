@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "mimic.h"
 
 /**
  * _isdigit - check the given value is a digit

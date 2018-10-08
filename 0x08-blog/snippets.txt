@@ -8,20 +8,73 @@ $ ar -rc libmimic.a *.o
 $ ls libmimic.a
 libmimic.a
 
+code 000 - # create an object file.
+
+```
+$ ls
+some_src.c header.h main.c
+$ gcc -c some_src.c
+$ ls
+some_src.c some_src.o header.h main.c
+$ gcc main.c some_src.o -o dose_something
+```
+
 
 code 001 - # Creating a static Lib
 
 ```
 $ gcc -c *.c # create object file from all source in this space
 $ ar -rc libmimic.a *.o # Create a static lib from all objects
-$ ar -t libmimic.a # View objects within a lib using the '-t'
-0-isupper.o                                                            
-0-memset.o                                                             
-0-strcat.o                                                             
-100-atoi.o                                                             
-.
-.
-.                                                                   
-$                                                                       
 ```
 
+code 001.a - #1st
+
+
+code 001.b
+
+```
+$ ar -t libmimic.a # View objects within a lib using the '-t'
+0-isupper.o
+0-memset.o
+0-strcat.o
+100-atoi.o
+.
+.
+.
+$
+```
+
+code 001.c
+``
+$ nm libmimic.a
+
+0-isupper.o:
+0000000000000000 T _isupper
+
+0-memset.o:
+0000000000000000 T _memset
+
+0-strcat.o:
+0000000000000000 T _strcat
+.
+.
+.
+```
+
+code 002 - # using a Static lib.
+
+```
+#include "mimic.h"
+
+int main(void)
+{
+        _puts("\"At the end of the day, my goal was to be the best hacker\"\n\t- Kevin Mitnick");
+        return (0);
+}
+```
+
+code 002.a
+
+```
+$ gcc main.c -I./header -L./libs -lmimic -o quote
+```

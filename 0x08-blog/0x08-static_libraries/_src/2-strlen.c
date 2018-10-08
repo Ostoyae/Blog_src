@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "mimic.h"
 
 /**
   * _strlen - return the lenth of the string as an int value

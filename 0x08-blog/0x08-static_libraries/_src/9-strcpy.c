@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "mimic.h"
 
 /**
  * _strcpy - fuction copies the string pointed

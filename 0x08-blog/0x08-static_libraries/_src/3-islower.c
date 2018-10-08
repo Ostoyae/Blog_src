@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "mimic.h"
 #include <ctype.h>
 /**
  * _islower - check if the given character is lower case.

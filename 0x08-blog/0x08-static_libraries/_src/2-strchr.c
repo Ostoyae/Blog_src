@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "mimic.h"
 #include <stdio.h>
 
 /**

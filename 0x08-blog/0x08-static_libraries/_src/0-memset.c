@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "mimic.h"
 
 /**
  * _memset - this funtion fills memory with a constant byte.

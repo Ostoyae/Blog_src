@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "mimic.h"
 
 /**
  * _strcat - this fuction will concatenates two strings
